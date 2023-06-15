@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-03-17T07:06:19.192Z</updated>
+  <updated>2023-06-15T17:19:14.093Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,13 +17,49 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>gitbook使用</title>
+    <link href="http://example.com/2023/06/16/gitbook%E4%BD%BF%E7%94%A8/"/>
+    <id>http://example.com/2023/06/16/gitbook%E4%BD%BF%E7%94%A8/</id>
+    <published>2023-06-15T16:36:28.000Z</published>
+    <updated>2023-06-15T17:19:14.093Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="gitbook使用">Gitbook使用<a title="#gitbook使用" href="#gitbook使用"></a></h3><h4 id="创建简单的gitbook">创建简单的gitbook<a title="#创建简单的gitbook" href="#创建简单的gitbook"></a></h4><p>为电子书创建目录</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> my-gitbook</span><br></pre></td></tr></table></figure><p>执行<code>gitbook init</code>命令，初始化电子书目录，执行结束后会出现<code>SUMMARY.md</code>和<code>README.md</code>文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook init</span><br></pre></td></tr></table></figure><p>生成动态网页，执行<code>gitbook server</code>启动web服务，默认端口4000</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook server</span><br></pre></td></tr></table></figure><p>浏览器输入<code>http://localhost:4000</code>，访问该电子书</p><blockquote><p>其他详细配置链接：<a href="https://blog.csdn.net/qq_41809023/article/details/127514108" target="_blank">https://blog.csdn.net/qq_41809023/article/details/127514108</a></p></blockquote><p>生成静态网页，静态HTML会输出到<code>_book</code>目录中</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook build</span><br></pre></td></tr></table></figure><h4 id="解决gitbook-build静态网页无法跳转问题">解决gitbook build静态网页无法跳转问题<a title="#解决gitbook-build静态网页无法跳转问题" href="#解决gitbook-build静态网页无法跳转问题"></a></h4><p>在_book文件夹内，找到gitbook文件夹，在里面找到theme.js</p><p>用文本搜索工具查找</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(m)<span class="keyword">for</span>(n.<span class="property">handler</span>&amp;&amp;</span><br></pre></td></tr></table></figure><p>将<code>if(m)</code>改成<code>if(false)</code></p><p>再次打开_book下的网页，就可以正常跳转了</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;gitbook使用&quot;&gt;Gitbook使用&lt;a title=&quot;#gitbook使用&quot; href=&quot;#gitbook使用&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;创建简单的gitbook&quot;&gt;创建简单的gitbook&lt;a title=&quot;#创建简单的gitbook&quot; hre</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode</title>
+    <link href="http://example.com/2023/05/12/leetcode/"/>
+    <id>http://example.com/2023/05/12/leetcode/</id>
+    <published>2023-05-12T08:51:17.000Z</published>
+    <updated>2023-05-12T09:02:59.610Z</updated>
+    
+    
+    
+    
+    
+    <category term="algorithm" scheme="http://example.com/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="http://example.com/2023/03/16/hello-world/"/>
     <id>http://example.com/2023/03/16/hello-world/</id>
     <published>2023-03-16T14:28:00.768Z</published>
-    <updated>2023-03-17T07:06:19.192Z</updated>
+    <updated>2023-06-15T16:38:17.513Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank">GitHub</a>.</p><h2 id="quick-start">Quick Start<a title="#quick-start" href="#quick-start"></a></h2><h3 id="create-a-new-post">Create a new post<a title="#create-a-new-post" href="#create-a-new-post"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank">Writing</a></p><h3 id="run-server">Run server<a title="#run-server" href="#run-server"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank">Server</a></p><h3 id="clean-static-files">Clean static files<a title="#clean-static-files" href="#clean-static-files"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure><h3 id="generate-static-files">Generate static files<a title="#generate-static-files" href="#generate-static-files"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank">Generating</a></p><h3 id="deploy-to-remote-sites">Deploy to remote sites<a title="#deploy-to-remote-sites" href="#deploy-to-remote-sites"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank">GitHub</a>.</p><h2 id="quick-start">Quick Start<a title="#quick-start" href="#quick-start"></a></h2><h3 id="hexo命令找不到">hexo命令找不到<a title="#hexo命令找不到" href="#hexo命令找不到"></a></h3><p>将<code>hexo-blog\node_modules\hexo\bin</code>加入系统的<code>path</code>中</p><h3 id="create-a-new-post">Create a new post<a title="#create-a-new-post" href="#create-a-new-post"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank">Writing</a></p><h3 id="run-server">Run server<a title="#run-server" href="#run-server"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank">Server</a></p><h3 id="clean-static-files">Clean static files<a title="#clean-static-files" href="#clean-static-files"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure><h3 id="generate-static-files">Generate static files<a title="#generate-static-files" href="#generate-static-files"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank">Generating</a></p><h3 id="deploy-to-remote-sites">Deploy to remote sites<a title="#deploy-to-remote-sites" href="#deploy-to-remote-sites"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank">Deployment</a></p>]]></content>
     
     
       
